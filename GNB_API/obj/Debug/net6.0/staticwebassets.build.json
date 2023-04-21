@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2rNCuMV2iN+gzGAeKBmOb4NVpflHKcSntDl5+CVOMOw=",
+  "Source": "GNB_API",
+  "BasePath": "_content/GNB_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

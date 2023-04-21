@@ -1,0 +1,15 @@
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\bin\Debug\net6.0\GNB_Repository.deps.json
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\bin\Debug\net6.0\GNB_Repository.dll
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\bin\Debug\net6.0\GNB_Repository.pdb
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.csproj.AssemblyReference.cache
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.AssemblyInfoInputs.cache
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.AssemblyInfo.cs
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.csproj.CoreCompileInputs.cache
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.dll
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\refint\GNB_Repository.dll
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.pdb
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\ref\GNB_Repository.dll
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\bin\Debug\net6.0\GNB_Data.dll
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\bin\Debug\net6.0\GNB_Data.pdb
+C:\Users\maalrilo\source\repos\GNB\GNB_Repository\obj\Debug\net6.0\GNB_Repository.csproj.CopyComplete
