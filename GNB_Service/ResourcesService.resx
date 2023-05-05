@@ -121,6 +121,9 @@
     <value>CAD</value>
     <comment>Moneda Canadiense</comment>
   </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Error en petición HTTP {0}</value>
+  </data>
   <data name="EUR" xml:space="preserve">
     <value>EUR</value>
     <comment>Moneda Europea</comment>
