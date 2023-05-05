@@ -13,6 +13,7 @@ namespace GNB_API.Controllers
         private readonly IConversionRate conversionRateService;
         private readonly ITransaction transactionService;
         private readonly ILogger logger;
+
         public GNBController(IConversionRate conversionRateService, ITransaction transactionService, ILogger<GNBController> logger)
         {
             this.conversionRateService = conversionRateService;
