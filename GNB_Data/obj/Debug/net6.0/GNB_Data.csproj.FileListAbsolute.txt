@@ -10,3 +10,15 @@ C:\Users\maalrilo\source\repos\GNB\GNB_Data\obj\Debug\net6.0\GNB_Data.dll
 C:\Users\maalrilo\source\repos\GNB\GNB_Data\obj\Debug\net6.0\refint\GNB_Data.dll
 C:\Users\maalrilo\source\repos\GNB\GNB_Data\obj\Debug\net6.0\GNB_Data.pdb
 C:\Users\maalrilo\source\repos\GNB\GNB_Data\obj\Debug\net6.0\ref\GNB_Data.dll
+C:\Users\maalrilo\source\CLONES\GNB_Data\bin\Debug\net6.0\GNB_Data.deps.json
+C:\Users\maalrilo\source\CLONES\GNB_Data\bin\Debug\net6.0\GNB_Data.dll
+C:\Users\maalrilo\source\CLONES\GNB_Data\bin\Debug\net6.0\GNB_Data.pdb
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.csproj.AssemblyReference.cache
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.AssemblyInfoInputs.cache
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.AssemblyInfo.cs
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.csproj.CoreCompileInputs.cache
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.dll
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\refint\GNB_Data.dll
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\GNB_Data.pdb
+C:\Users\maalrilo\source\CLONES\GNB_Data\obj\Debug\net6.0\ref\GNB_Data.dll

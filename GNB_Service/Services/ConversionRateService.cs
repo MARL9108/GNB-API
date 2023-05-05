@@ -34,34 +34,34 @@ namespace GNB_Service.Services
                     UpdateRatesFromAPI(APIresult);
                     return APIresult;
                 }                
-                return GetRates();                
+                return await GetRates();                
             }
             catch(Exception e)
             {
-                logger.LogError(e, e?.InnerException?.Message);
-                return GetRates();
+                logger.LogInformation(e, String.Format(ResourcesService.ERROR, e?.Message));
+                return await GetRates();
             }            
         }        
-        public void GetDefaultConversion(GNBTransactionResponse gNBTransactionResponse, string defaultCoin)
+        public async Task GetDefaultConversion(GNBTransactionResponse gNBTransactionResponse, string defaultCoin)
         {
             foreach (var transaction in gNBTransactionResponse.Transactions)
             {
-                var rate = GetRateByRange(transaction.Currency, defaultCoin);
+                var rate = await GetRateByRange(transaction.Currency, defaultCoin);
 
                 transaction.Amount = Math.Round(transaction.Amount * rate, 2);
                 transaction.Currency = defaultCoin;
             }
         }
-        private RateResponseDTO GetRates()
+        private async Task<RateResponseDTO> GetRates()
         {
             var rateResponse = new RateResponseDTO();
-            var rates = GNBcontext.Rates;
+            var rates = await rateRepository.GetAllRates();
             rateResponse.ConversionRates = mapper.Map<List<RateDTO>>(rates);
             return rateResponse;
         }
-        private decimal GetRateByRange(string from, string to)
+        private async Task<decimal> GetRateByRange(string from, string to)
         {
-            var conversionRateResponse = GetRates();
+            var conversionRateResponse = await GetRates();
             return conversionRateResponse.ConversionRates.Where(x => x.From.Equals(from) && x.To.Equals(to)).Any()
                 ? conversionRateResponse.ConversionRates.Find(x => x.From.Equals(from) && x.To.Equals(to)).Rate
                 : 1;

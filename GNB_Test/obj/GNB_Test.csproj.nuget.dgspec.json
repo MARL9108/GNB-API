@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Test\\GNB_Test.csproj": {}
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Test\\GNB_Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_API\\GNB_API.csproj": {
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_API\\GNB_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_API\\GNB_API.csproj",
+        "projectUniqueName": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_API\\GNB_API.csproj",
         "projectName": "GNB_API",
-        "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_API\\GNB_API.csproj",
+        "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_API\\GNB_API.csproj",
         "packagesPath": "C:\\Users\\maalrilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_API\\obj\\",
+        "outputPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maalrilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Service\\GNB_Service.csproj": {
-                "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Service\\GNB_Service.csproj"
+              "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Service\\GNB_Service.csproj": {
+                "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Service\\GNB_Service.csproj"
               }
             }
           }
@@ -57,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -86,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj": {
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj",
+        "projectUniqueName": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj",
         "projectName": "GNB_Data",
-        "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj",
+        "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj",
         "packagesPath": "C:\\Users\\maalrilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\obj\\",
+        "outputPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maalrilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,6 +125,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -141,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Repository\\GNB_Repository.csproj": {
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Repository\\GNB_Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Repository\\GNB_Repository.csproj",
+        "projectUniqueName": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Repository\\GNB_Repository.csproj",
         "projectName": "GNB_Repository",
-        "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Repository\\GNB_Repository.csproj",
+        "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Repository\\GNB_Repository.csproj",
         "packagesPath": "C:\\Users\\maalrilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Repository\\obj\\",
+        "outputPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maalrilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -165,8 +175,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj": {
-                "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj"
+              "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj": {
+                "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj"
               }
             }
           }
@@ -184,6 +194,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             }
           },
           "imports": [
@@ -206,14 +220,14 @@
         }
       }
     },
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Service\\GNB_Service.csproj": {
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Service\\GNB_Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Service\\GNB_Service.csproj",
+        "projectUniqueName": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Service\\GNB_Service.csproj",
         "projectName": "GNB_Service",
-        "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Service\\GNB_Service.csproj",
+        "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Service\\GNB_Service.csproj",
         "packagesPath": "C:\\Users\\maalrilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Service\\obj\\",
+        "outputPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maalrilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -230,11 +244,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj": {
-                "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj"
+              "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj": {
+                "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj"
               },
-              "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Repository\\GNB_Repository.csproj": {
-                "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Repository\\GNB_Repository.csproj"
+              "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Repository\\GNB_Repository.csproj": {
+                "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Repository\\GNB_Repository.csproj"
               }
             }
           }
@@ -264,6 +278,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             }
           },
           "imports": [
@@ -286,14 +304,14 @@
         }
       }
     },
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Test\\GNB_Test.csproj": {
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Test\\GNB_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Test\\GNB_Test.csproj",
+        "projectUniqueName": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Test\\GNB_Test.csproj",
         "projectName": "GNB_Test",
-        "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Test\\GNB_Test.csproj",
+        "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Test\\GNB_Test.csproj",
         "packagesPath": "C:\\Users\\maalrilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Test\\obj\\",
+        "outputPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maalrilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -310,8 +328,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_API\\GNB_API.csproj": {
-                "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_API\\GNB_API.csproj"
+              "C:\\Users\\maalrilo\\source\\CLONES\\GNB_API\\GNB_API.csproj": {
+                "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_API\\GNB_API.csproj"
               }
             }
           }
@@ -337,6 +355,10 @@
             "Moq": {
               "target": "Package",
               "version": "[4.18.4, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

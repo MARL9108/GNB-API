@@ -24,7 +24,7 @@ namespace GNB_API.Controllers
         public async Task<IActionResult> GetAllConversionRates()
         {
             try
-            {
+            {                
                 var conversionRates = await conversionRateService.GetConversionRates();
                 if (conversionRates?.ConversionRates?.Count > 0) return Ok(conversionRates);
                 return NotFound();
@@ -53,11 +53,11 @@ namespace GNB_API.Controllers
         }
 
         [HttpPost("GetTransactionBySku")]
-        public IActionResult GetTransaction([FromBody] TransactionRequest transactionRequest)
+        public async Task<IActionResult> GetTransaction([FromBody] TransactionRequest transactionRequest)
         {
             try
             {
-                var transaction = transactionService.GetTransaction(transactionRequest);
+                var transaction = await transactionService.GetTransaction(transactionRequest);
                 if (transaction?.Transactions?.Count > 0) return Ok(transaction);
                 return NotFound();
             }

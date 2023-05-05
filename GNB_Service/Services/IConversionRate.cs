@@ -10,6 +10,6 @@ namespace GNB_Service.Services
     public interface IConversionRate
     {
         Task<RateResponseDTO> GetConversionRates();
-        void GetDefaultConversion(GNBTransactionResponse gNBTransactionResponse, string defaultCoin);
+        Task GetDefaultConversion(GNBTransactionResponse gNBTransactionResponse, string defaultCoin);
     }
 }

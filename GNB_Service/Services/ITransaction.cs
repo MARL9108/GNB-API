@@ -12,7 +12,7 @@ namespace GNB_Service.Services
     public interface ITransaction
     {
         Task<TransactionResponseDTO> GetAllTransactions();
-        GNBTransactionResponse GetTransaction(TransactionRequest transactionRequest);
-        GNBTransactionResponse GetTransactionBySku(string Sku);
+        Task<GNBTransactionResponse> GetTransaction(TransactionRequest transactionRequest);
+        Task<GNBTransactionResponse> GetTransactionBySku(string Sku);
     }
 }

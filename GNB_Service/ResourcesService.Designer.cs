@@ -70,6 +70,15 @@ namespace GNB_Service {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Error en petición HTTP {0}.
+        /// </summary>
+        internal static string ERROR {
+            get {
+                return ResourceManager.GetString("ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a EUR.
         /// </summary>
         internal static string EUR {

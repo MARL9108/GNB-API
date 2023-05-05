@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj": {}
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj": {
+    "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj",
+        "projectUniqueName": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj",
         "projectName": "GNB_Data",
-        "projectPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\GNB_Data.csproj",
+        "projectPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\GNB_Data.csproj",
         "packagesPath": "C:\\Users\\maalrilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maalrilo\\source\\repos\\GNB\\GNB_Data\\obj\\",
+        "outputPath": "C:\\Users\\maalrilo\\source\\CLONES\\GNB_Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maalrilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

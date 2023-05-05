@@ -39,18 +39,18 @@ namespace GNB_Service.Services
                     UpdateTransactionsFromAPI(APIresult);
                     return APIresult;
                 }                
-                return GetTransactions();
+                return await GetTransactions();
             }
             catch (Exception e)
             {
                 logger.LogError(e, e?.InnerException?.Message);
-                return GetTransactions();
+                return await GetTransactions();
             }
         }
 
-        public GNBTransactionResponse GetTransaction(TransactionRequest transactionRequest)
+        public async Task<GNBTransactionResponse> GetTransaction(TransactionRequest transactionRequest)
         {            
-            GNBTransactionResponse GNBTransaction = GetTransactionBySku(transactionRequest.Sku);
+            GNBTransactionResponse GNBTransaction = await GetTransactionBySku(transactionRequest.Sku);
 
             conversionRateService.GetDefaultConversion(GNBTransaction, config["DefaultCoin"]);
 
@@ -58,17 +58,20 @@ namespace GNB_Service.Services
             return GNBTransaction;
         }
 
-        public GNBTransactionResponse GetTransactionBySku(string Sku)
+        public async Task<GNBTransactionResponse> GetTransactionBySku(string Sku)
         {
-            var GNBTransaction = new GNBTransactionResponse();
-            GNBTransaction.Transactions = GetTransactions().Transactions.Where(x => x.Sku.Equals(Sku)).ToList();
-            return GNBTransaction;
+            var GNBTransaction = new TransactionResponseDTO();
+            var GNBTransactionResponse = new GNBTransactionResponse();
+            GNBTransaction = await GetTransactions();
+            GNBTransaction.Transactions = GNBTransaction.Transactions.Where(x => x.Sku.Equals(Sku)).ToList();
+            GNBTransactionResponse.Transactions = GNBTransaction.Transactions;
+            return GNBTransactionResponse;
         }
 
-        private TransactionResponseDTO GetTransactions()
+        private async Task<TransactionResponseDTO> GetTransactions()
         {
             var transactionResponse = new TransactionResponseDTO();
-            var transaction = context.Transactions;
+            var transaction = await transactionRepository.GetAllTransactions();
             transactionResponse.Transactions = mapper.Map<List<TransactionDTO>>(transaction);
             return transactionResponse;
         }
